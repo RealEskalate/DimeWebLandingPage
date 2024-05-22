@@ -1,0 +1,91 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  padding-top: 100px; /* Adjust for header height */
+  box-sizing: border-box; /* Ensure padding is included in height calculation */
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.671);
+  margin-bottom: 20px; /* Add space below the paragraph */
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px; /* Space between paragraph and image */
+}
+
+.image {
+  max-width: 80%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: none; /* Optional: set a max height to prevent it from taking over the page */
+}
+.infoContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  
+}
+.infoContainer h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+  margin-right: 10px;
+}
+
+.infoContainer p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.671);
+  margin-bottom: 20px; /* Add space below the paragraph */
+}
+.infoContainer .field{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.5%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.input{
+  padding: 8px 8px;
+  width: 250px;
+  background-color: rgba(18, 14, 25, 0.4);
+  border: 1px solid rgba(18, 14, 25, 0.4);
+  border-radius: 7px;
+  margin-right: 20px;
+  flex-grow: 0; /* Allows the input box to grow to fill the available space */
+}
+
+.input:focus {
+  outline: none;
+  border-color: #007bff; /* Change border color when focused */
+}
+
+.input::placeholder {
+  color: #999; /* Placeholder text color */
+}
+.footer {
+  background-color:transparent;
+  color: #999;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 0.75rem;
+  
+}

@@ -1,0 +1,20 @@
+.button {
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    border: 1px solid rgba(244, 248, 12, 0.363);
+    padding: 3px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.button:hover {
+    background-color: #022142;
+}
+.readMore {
+    color: grey;
+}
+.arrow {
+    font-size: 1.2rem; /* Adjust size as needed */
+    margin-left: 5px; /* Adjust spacing between text and arrow */
+  }
