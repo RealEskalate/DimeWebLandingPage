@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh; /* Full viewport height */
-  padding-top: 100px; /* Adjust for header height */
-  box-sizing: border-box; /* Ensure padding is included in height calculation */
+  height: 100vh; 
+  padding-top: 100px; 
+  box-sizing: border-box; 
   text-align: center;
 }
 
@@ -18,7 +18,7 @@
 .content p {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.671);
-  margin-bottom: 20px; /* Add space below the paragraph */
+  margin-bottom: 20px; 
 }
 
 .imageContainer {
@@ -26,21 +26,75 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 20px; /* Space between paragraph and image */
+  margin-top: 20px; 
 }
 
 .image {
-  max-width: 80%; /* Ensure the image fits within the container */
-  height: auto; /* Maintain aspect ratio */
-  max-height: none; /* Optional: set a max height to prevent it from taking over the page */
+  max-width: 80%; 
+  height: auto; 
+  max-height: none; 
 }
-.infoContainer{
+.infoContainer{ 
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+}
+.dashline {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  padding: 80px;
+}
+
+
+.dashline .top,
+.dashline .bottom {
+  position: absolute;
+  background: linear-gradient(to right, rgba(153, 153, 153, 0), rgba(153, 153, 153, 1), rgba(153, 153, 153, 0)); /* Add gradient background */
+  width: calc(100% + 250px); 
+  left: -120px; 
+  height: 1px; 
+  border-top: 1px dashed rgba(153, 153, 153, 1); 
+  box-sizing: border-box;
+}
+
+.dashline .left,
+.dashline .right {
+  position: absolute;
+  /*background: linear-gradient(to bottom, rgba(153, 153, 153, 0), rgba(153, 153, 153, 1), rgba(153, 153, 153, 0)); /* Add gradient background */
+  width: 1px; /* Set the width to 1px */
+  border-left: 1px dashed rgba(153, 153, 153, 1); 
+  border-right: 1px dashed rgba(153, 153, 153, 1); 
+  box-sizing: border-box;
+}
+
+.dashline .top {
+  top: 0;
+}
+
+.dashline .right {
+  right: 0;
+  height: calc(100% + 130px); /* Extend the height to be longer */
+  top: -10px; /* Center the line */
+  border-right: 1px dashed rgba(153, 153, 153, 1); /* Ensure right side has a dashed line */
+  border-left: none;
+}
+
+.dashline .bottom {
+  bottom: 0;
   
 }
+
+.dashline .left {
+  left: 0;
+  height: calc(100% + 130px); 
+  top: -10px; 
+  border-left: 1px dashed rgba(153, 153, 153, 1); 
+  border-right: none;
+}
+
+
 .infoContainer h1 {
   font-size: 3rem;
   font-weight: 500;
@@ -51,7 +105,7 @@
 .infoContainer p {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.671);
-  margin-bottom: 20px; /* Add space below the paragraph */
+  margin-bottom: 20px; 
 }
 .infoContainer .field{
   display: flex;
@@ -63,27 +117,28 @@
   
 }
 .input{
+  color: #999;
   padding: 8px 8px;
   width: 250px;
   background-color: rgba(18, 14, 25, 0.4);
   border: 1px solid rgba(18, 14, 25, 0.4);
   border-radius: 7px;
   margin-right: 20px;
-  flex-grow: 0; /* Allows the input box to grow to fill the available space */
+  flex-grow: 0; 
 }
 
 .input:focus {
   outline: none;
-  border-color: #007bff; /* Change border color when focused */
+  border-color: #007bff; 
 }
 
 .input::placeholder {
-  color: #999; /* Placeholder text color */
+  color: #999; 
 }
 .footer {
   background-color:transparent;
   color: #999;
-  padding-top: 70px;
+  padding-top: 200px;
   padding-bottom: 10px;
   text-align: center;
   font-size: 0.75rem;

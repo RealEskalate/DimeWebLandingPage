@@ -1,16 +1,24 @@
+/* src/styles/global.css */
+
+/* Light theme (default) */
+:root {
+  --background-color: radial-gradient(51.83% 80% at 50% -20%, rgba(40, 108, 209, 0.30) 60.5%, rgba(255, 255, 255, 0.00) 100%), #574848;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --background-color: radial-gradient(51.83% 80% at 50% -20%, rgba(40, 108, 209, 0.30) 60.5%, rgba(0, 0, 0, 0.00) 100%), #121212;
+  --text-color: white;
+}
+
 body {
-  /* Set background to the gradient */
-  background: radial-gradient(51.83% 80% at 50% -20%, rgba(40, 108, 209, 0.30) 60.5%, rgba(255, 255, 255, 0.00) 100%), #574848;
-  /* Ensure background covers the entire viewport */
+  background: var(--background-color);
+  color: var(--text-color);
   background-size: 100% 100%;
-  /* Ensure background remains fixed */
   background-attachment: fixed;
-  /* Ensure background is not repeated 
-  
-  */
   background-repeat: no-repeat;
 }
-/* styles/globals.css */
+
 .content-container {
-  padding-top: 80px; /* Adjust based on header height */
+  padding-top: 80px;
 }

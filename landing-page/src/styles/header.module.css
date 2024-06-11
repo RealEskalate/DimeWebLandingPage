@@ -1,19 +1,22 @@
 .header {
     display: flex;
-    justify-content: space-between; /* Adjusted to align items to the start */
+    justify-content: space-between; 
     align-items: center;
-    padding: 20px;
-    background-color: transparent; /* Fully transparent background */
-    position: fixed; /* Fixes the header at the top */
-    width: 100%; /* Full width */
+    padding: 10px;
+    background-color:rgba(34, 27, 46, 0.2); 
+    position: fixed; 
+    width: 100%; 
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensures it stays above other content */
+    z-index: 1000; 
+    transition: background-color 0.3s ease;
+}
+.header.visible {
+    background-color: transparent; 
 }
 
 .logo {
     margin-left: 100px;
-     /* Pushes the button to the far right */
 }
 
 .button {
@@ -27,5 +30,5 @@
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color:  #022142;
 }
