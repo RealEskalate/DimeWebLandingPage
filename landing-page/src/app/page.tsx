@@ -4,6 +4,7 @@ import styles from '../styles/page.module.css';
 import '../styles/globals.css';
 import ReadMore from '@/components/ReadMore';
 import JoinWaitlistButton from '@/components/JoinWaitlistButton';
+import ThemeSwitcher from '@/components/ThemeSwitcher';
 
 
 export default function Home() {
@@ -26,25 +27,31 @@ export default function Home() {
     return () => clearInterval(intervalId); // Clear interval on component unmount
   }, [placeholders.length]);  
   return (
-      <div className = {styles.content}>
-        <ReadMore/>
-        <h1 className = {styles.h1}>A new era of payemnts <br/> is coming.</h1>
-        <p className = {styles.p}>All your accounts at one place. Easy bank to bank transfers.
-        <br/>Fast,transparent and reliable.</p>
-        <div className={styles.imageContainer}>
-         <img src ="./Card.svg" alt='Card Logo' className={styles.image} ></img> 
-        </div>
+    <><ThemeSwitcher /><div className={styles.content}>
+      <ReadMore />
+      <h1 className={styles.h1}>A new era of payemnts <br /> is coming.</h1>
+      <p className={styles.p}>All your accounts at one place. Easy bank to bank transfers.
+        <br />Fast,transparent and reliable.</p>
+      <div className={styles.imageContainer}>
+        <img src="./Card.svg" alt='Card Logo' className={styles.image}></img>
+      </div>
+      <div className={styles.dashline}>
+        <div className={styles.top}></div>
+        <div className={styles.left}></div>
+        <div className={styles.right}></div>
+        <div className={styles.bottom}></div>
         <div className={styles.infoContainer}>
-          <h1 className = {styles.h1}>Be the first to have the <br/> best banking <br/> experince</h1>
-          <p className = {styles.p}>Be part of our limited waitlist get dime before anyone.</p>
+          <h1 className={styles.h1}>Be the first to have the <br /> best banking <br /> experince</h1>
+          <p className={styles.p}>Be part of our limited waitlist get dime before anyone.</p>
           <div className={styles.field}>
-          <input type="email" placeholder={placeholders[placeholderIndex]} className={styles.input} />
-          <JoinWaitlistButton/>
+            <input type="email" placeholder={placeholders[placeholderIndex]} className={styles.input} />
+            <JoinWaitlistButton />
           </div>
         </div>
-        <footer className={styles.footer}>
+      </div>
+      <footer className={styles.footer}>
         Dime INC. All rights Reserved . 2024
       </footer>
-      </div>
+    </div></>
   );
 }
