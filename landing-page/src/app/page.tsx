@@ -63,9 +63,9 @@ export default function Home() {
           Fast, transparent, and reliable.
         </p>
         <div className={styles.imageContainer}>
-          <img src="./Card.svg" alt="Card Logo" className={styles.image}></img>
+          <img src="./Card.png" alt="Card Logo" className={styles.image}></img>
         </div>
-        <div className={styles.dashline}>
+        <div className={styles.dashline} id="target-section">
           <div className={styles.top}></div>
           <div className={styles.left}></div>
           <div className={styles.right}></div>
