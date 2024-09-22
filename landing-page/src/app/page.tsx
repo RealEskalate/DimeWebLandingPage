@@ -55,12 +55,11 @@ export default function Home() {
       <div className={styles.content}>
         <ReadMore />
         <h1 className={styles.h1}>
-          A new era of payments <br /> is coming.
+          Fast, Secure, Global Remittance to Ethiopia.
         </h1>
         <p className={styles.p}>
-          All your accounts at one place. Easy bank to bank transfers.
-          <br />
-          Fast, transparent, and reliable.
+          Transfer funds to family and friends from any country, in any
+          currency—safe and easy.
         </p>
         <div className={styles.imageContainer}>
           <img src="./Card.png" alt="Card Logo" className={styles.image}></img>
@@ -72,7 +71,7 @@ export default function Home() {
           <div className={styles.bottom}></div>
           <div className={styles.infoContainer}>
             <h1 className={styles.h1}>
-              Be the first to have the <br /> best banking <br /> experience
+              Be the first to have the <br /> best remittance <br /> service.
             </h1>
             <p className={styles.p}>
               Be part of our limited waitlist, get Dime before anyone else.

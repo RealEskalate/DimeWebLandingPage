@@ -178,5 +178,10 @@
 
 
   }
- 
+  .content h1{
+    font-size: 25px;
+  }
+  .content p{
+    font-size: 15px;
+  }
 }
