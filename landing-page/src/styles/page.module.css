@@ -185,3 +185,24 @@
     font-size: 15px;
   }
 }
+.imageContainer {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.image {
+  max-width: 450px; 
+  margin: 30px -50px; 
+} 
+@media (max-width: 768px) {
+  .image {
+    max-width: 250px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+    max-width: 180px; 
+  }
+}
