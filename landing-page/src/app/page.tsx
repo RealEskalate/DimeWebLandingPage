@@ -62,8 +62,14 @@ export default function Home() {
           currency—safe and easy.
         </p>
         <div className={styles.imageContainer}>
-          <img src="./Card.png" alt="Card Logo" className={styles.image}></img>
+          <img src="./faceLeft.png" alt="Left Face" className={styles.image} />
+          <img
+            src="./faceRight.png"
+            alt="Right Face"
+            className={styles.image}
+          />
         </div>
+
         <div className={styles.dashline} id="target-section">
           <div className={styles.top}></div>
           <div className={styles.left}></div>
